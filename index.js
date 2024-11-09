@@ -25,7 +25,11 @@ async function run() {
 
   // Write your prompt here
   const prompt =
-    "generate a web development content, tips and tricks or something new or some rant or some advice as a tweet, it should not be vague and should be unique; under 280 characters and should be plain text, you can use emojis";
+    "generate a twitter content based on this reference “I'm going to get to one million followers on here.
+
+Watch me, Disapper if you have to. Focus on you., 2025 is for healing., My type of healing:,In 2025, put god first., Enter the new year with a clean heart, let that hurt go., You can be friends with people for years and it cold take years to realize they were never your friends., Pray even after you get what you were praying for.,People want you to lose just because it’ll justify the risk they never took., Some people become loners because they were betrayed by every single person they ever trusted., Name one thing that Andrew Tate and Donald Trump have in common, What are the most attractive hobbies a woman can have?”
+or some rant or some advice as a tweet, it should not be vague and should be unique; between 50 - 150 characters and should be plain text, you can use sometimes one emoji.
+";
 
   const result = await model.generateContent(prompt);
   const response = await result.response;
